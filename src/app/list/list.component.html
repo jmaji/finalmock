@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+               <html>
+               <head>
+               <style>
+               table {
+                 font-family: arial, sans-serif;
+                 border-collapse: collapse;
+                 width: 100%;
+               }
+               
+               td, th {
+                 border: 1px solid black;
+                 text-align: left;
+                 padding: 8px;
+               }
+               
+               tr:nth-child(even) {
+                 background-color: #dddddd;
+               }
+               </style>
+               </head>
+               <body>
+<html>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Team1</th>
+            <th>Team2</th>
+            <th>Bidding info</th>
+        </tr>
+    </thead>
+   <!--<tbody *ngFor='let match of matches'>
+        <tr>
+            <td>{{match.id}}</td>
+            <td>{{match.Team1}}</td>
+            <td>{{match.Team2}}</td>
+      
+        </tr>
+           
+
+         
+         </tbody>-->
+
+           <tbody>
+             <tr>
+               <td>1</td>
+               <td>Royal Challangers Bengaluru</td>
+               <td>Delhi Captains</td>
+           
+
+
+
+               
+         <td><a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
+          <button type="button" disabled onclick="alert('Bidding Started')">Cancel Bidding</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kolkata Night Riders</td>
+          <td>KingsX1 Punjab</td>
+      
+
+
+
+          
+    <td><a [routerLink]='["/details"]' style="text-align: center;">Match Details</a>&nbsp;&nbsp;
+     <button type="button" disabled onclick="alert('Bidding Started')">Cancel Bidding</button></td>
+   </tr>
+
+
+      </tbody>
+
+         </table>
+  
+
+
+         </html>
